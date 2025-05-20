@@ -1,10 +1,10 @@
-import "./App.css";
-import Timeline from "./components/Timeline";
+import SessionTimeline from "./components/SessionTimeline";
+import { sampleData } from "./data/sampleData";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-800">
-      <Timeline />
+    <div className="min-h-screen bg-black text-white">
+      <SessionTimeline sessionData={sampleData} />
     </div>
   );
 }
